@@ -7,11 +7,7 @@ export const metadata = {
   description: 'Welcome to my landing page',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body>{children}</body>

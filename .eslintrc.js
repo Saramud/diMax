@@ -20,6 +20,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off', // Для Next.js, где импорт React не требуется
     // Например, правило для обязательного использования точек с запятой:
     semi: ['error', 'always'],
+    'object-curly-spacing': ['error', 'never'],
   },
   settings: {
     react: {
