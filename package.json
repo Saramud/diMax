@@ -7,30 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
-    "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
-    "prepare": "husky"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ],
-    "*.ts": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ],
-    "*.css": [
-      "prettier --write",
-      "git add"
-    ]
+    "prepare": "husky install",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js",
+    "format": "prettier --write .",
+    "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
   },
   "dependencies": {
     "next": "15.0.2",
@@ -45,10 +27,9 @@
     "eslint-config-next": "15.0.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "husky": "^4.3.8",
-    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "pretty-quick": "^4.0.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "husky": "^8.0.0"
   }
 }
