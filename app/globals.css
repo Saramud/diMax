@@ -1,12 +1,16 @@
-/* app/globals.css */
+:root {
+  --main-color: #ffd413;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header, footer {
-  background-color: #333;
+header,
+footer {
+  background-color: var(--main-color);
   color: white;
   padding: 1rem;
   text-align: center;

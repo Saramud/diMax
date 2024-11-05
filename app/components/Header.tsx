@@ -1,15 +1,22 @@
 // app/components/Header.tsx
 export default function Header() {
-    return (
-      <header>
-        <nav>
-          <h1>My Landing Page</h1>
-          <ul>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    );
-  }
+  return (
+    <header>
+      <nav>
+        <h1>Автоподбор и Диагностика Авто</h1>
+        <h2>Автомобили из Японии и Европы</h2>
+        <ul>
+          <li>
+            <a href="#features">Услуги</a>
+          </li>
+          <li>
+            <a href="#about">О нас</a>
+          </li>
+          <li>
+            <a href="#contact">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
