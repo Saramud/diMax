@@ -11,15 +11,26 @@
     "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
     "prepare": "husky"
   },
-  // "husky": {
-  //   "hooks": {
-  //     "pre-commit": "pretty-quick --staged"
-  //   }
-  // },
   "husky": {
     "hooks": {
-      "pre-commit": "concurrently --kill-others-on-fail \"npm run ts-check\" \"npm run eslint\" \"npm run stylelint\" \"npm test -- --onlyChanged\""
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.ts": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ],
+    "*.css": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "dependencies": {
     "next": "15.0.2",
@@ -35,6 +46,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "husky": "^4.3.8",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3",
     "pretty-quick": "^4.0.0",
     "typescript": "^5"
