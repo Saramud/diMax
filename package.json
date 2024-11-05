@@ -11,6 +11,11 @@
     "check": "prettier --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml,yml}\"",
     "prepare": "husky"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "dependencies": {
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
@@ -24,8 +29,9 @@
     "eslint-config-next": "15.0.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "husky": "^9.1.6",
+    "husky": "^4.3.8",
     "prettier": "^3.3.3",
+    "pretty-quick": "^4.0.0",
     "typescript": "^5"
   }
 }
