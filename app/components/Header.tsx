@@ -7,7 +7,7 @@ export default function Header() {
         <h2>Автомобили из Японии и Европы</h2>
         <ul>
           <li>
-            <a href="#features">Услуги</a>
+            <a href="#features">ddddd</a>
           </li>
           <li>
             <a href="#about">О нас</a>
