@@ -1,9 +1,0 @@
-# Игнорировать node_modules
-node_modules/
-
-# Игнорировать скомпилированные файлы
-dist/
-build/
-out/
-
-.next/
