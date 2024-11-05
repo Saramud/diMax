@@ -19,12 +19,13 @@ module.exports = {
     'prettier/prettier': 'error', // Обработка ошибок форматирования как ошибок
     'react/react-in-jsx-scope': 'off', // Для Next.js, где импорт React не требуется
     // Например, правило для обязательного использования точек с запятой:
-    semi: ['error', 'always'],
+    semi: ['error', 'never'],
     'object-curly-spacing': ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
   },
   settings: {
     react: {
       version: 'detect',
     },
   },
-};
+}

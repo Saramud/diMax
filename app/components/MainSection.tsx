@@ -15,5 +15,5 @@ export default function MainSection() {
         <p>Get in touch with us.</p>
       </section>
     </main>
-  );
+  )
 }

@@ -7,5 +7,5 @@ export default function Footer() {
         защищены.
       </p>
     </footer>
-  );
+  )
 }

@@ -1,7 +1,7 @@
 // app/page.tsx
-import Header from './components/Header';
-import MainSection from './components/MainSection';
-import Footer from './components/Footer';
+import Header from './components/Header'
+import MainSection from './components/MainSection'
+import Footer from './components/Footer'
 
 export default function HomePage() {
   return (
@@ -10,5 +10,5 @@ export default function HomePage() {
       <MainSection />
       <Footer />
     </div>
-  );
+  )
 }
