@@ -30,6 +30,8 @@ export default function MainSection() {
     )
   }
 
+  // const buttonRender = (url: string) => {}
+
   return (
     <main>
       <section id="features">
@@ -42,7 +44,7 @@ export default function MainSection() {
         <h2>О нас</h2>
         <div className="about-wrapper">
           <div className="about-container">
-            <h1 className="about-container_title">
+            <h1 className="about-container__title">
               Профессиональный автоподбор и диагностика автомобилей в
               Санкт-Петербурге — diMAXcar
             </h1>
@@ -97,7 +99,9 @@ export default function MainSection() {
             </div>
 
             <div className="about-container__section">
-              <h2>Мой аккаунт в Instagram</h2>
+              <h2 className="about-container__title">
+                Мой аккаунт в Instagram
+              </h2>
               <p>
                 С июля 2018 года я веду Instagram-аккаунт{' '}
                 <strong>diMAXcar</strong> (
@@ -115,7 +119,9 @@ export default function MainSection() {
             </div>
 
             <div className="about-container__section">
-              <h2>Уникальный отчёт диагностики</h2>
+              <h2 className="about-container__title">
+                Уникальный отчёт диагностики
+              </h2>
               <p>
                 Я разработал{' '}
                 <strong>уникальный отчёт диагностики автомобиля</strong>, в
@@ -127,7 +133,9 @@ export default function MainSection() {
             </div>
 
             <div className="about-container__section">
-              <h2>Сотрудничество с известными личностями</h2>
+              <h2 className="about-container__title">
+                Сотрудничество с известными личностями
+              </h2>
               <p>
                 Моя работа замечена и оценена популярными блогерами и известными
                 людьми. Пример сотрудничества:{' '}
@@ -150,8 +158,8 @@ export default function MainSection() {
           <Image
             src={'/images/maks.png'}
             alt={'Максим автоподбор Санкт-Петербург'}
-            width="600"
-            height="800"
+            width="400"
+            height="700"
             className="about-container__image"
           />
         </div>
