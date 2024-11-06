@@ -33,17 +33,17 @@ export default function MainSection() {
   return (
     <main>
       <section id="features">
-        <h2>Услуги</h2>
+        <h2 className="main-title">Услуги</h2>
         <div className="features">
           {Object.values(serviceMap).map(servicesRender)}
         </div>
       </section>
       <section id="about">
-        <h2>О себе</h2>
+        <h2 className="main-title">О себе</h2>
         <div className="about-wrapper">
           <div className="about-image-container">
             <Image
-              src={'/images/maks2.png'}
+              src={'/images/Maks.png'}
               alt={'Максим автоподбор Санкт-Петербург'}
               width="200"
               height="200"
@@ -77,7 +77,7 @@ export default function MainSection() {
                 </li>
               </ul>
               <p>
-                Подробности о моих подходах можно найти здесь:{' '}
+                Подробности о моих подходах можно найти здесь —{' '}
                 <a
                   href="https://www.drive2.ru/b/2999748/"
                   target="_blank"

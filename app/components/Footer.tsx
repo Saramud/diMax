@@ -1,10 +1,15 @@
 import Image from 'next/image'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faYoutube, faInstagram, faVk} from '@fortawesome/free-brands-svg-icons'
+import {
+  faYoutube,
+  faInstagram,
+  faVk,
+  faWhatsapp,
+} from '@fortawesome/free-brands-svg-icons'
 
 export default function Footer() {
   return (
-    <footer>
+    <footer id="contact">
       <Image
         src="/images/logoBig.png"
         alt="Автоподобор"
@@ -12,6 +17,13 @@ export default function Footer() {
         height="100"
       />
       <div className="social-icons">
+        <a
+          href="https://wa.me/79215607819"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faWhatsapp} color="#00d757" />
+        </a>
         <a
           href="https://vk.com/dimaxcar"
           target="_blank"

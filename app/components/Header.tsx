@@ -8,7 +8,7 @@ export default function Header() {
           Автоподбор и Диагностика Авто Автомобили из Японии и Европы
         </h1>
         <Image
-          src="/images/logoBig.png"
+          src="/images/logoHeader.png"
           alt="Автоподобор"
           width="300"
           height="100"
@@ -18,7 +18,7 @@ export default function Header() {
             <a href="#features">Услуги</a>
           </li>
           <li>
-            <a href="#about">О нас</a>
+            <a href="#about">О себе</a>
           </li>
           <li>
             <a href="#contact">Контакты</a>
