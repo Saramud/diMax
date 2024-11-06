@@ -2,8 +2,12 @@
 import React from 'react'
 import './globals.css'
 
+import {config} from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
 export const metadata = {
-  title: 'Автоподбор',
+  title: 'Профессиональный автоподбор и диагностика — diMAXcar',
   description: 'Автоподобор и диагностика авто, автомобили из Японии и Европы',
 }
 
