@@ -25,7 +25,7 @@ const serviceMap: Services = {
 export default function MainSection() {
   const servicesRender = ({url, alt}: Service) => {
     return (
-      <a href={WHATSHAPP} target="_blank">
+      <a key={url} href={WHATSHAPP} target="_blank">
         <Image src={url} alt={alt} width="300" height="300" />
       </a>
     )
