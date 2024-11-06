@@ -1,11 +1,17 @@
-// app/components/Header.tsx
+import Image from 'next/image'
+
 export default function Header() {
   return (
     <header>
       <nav>
-        <h1>Автоподбор и Диагностика Авто</h1>
-        <h2>Автомобили из Японии и Европы</h2>
-        <ul>
+        {/* <h1>Автоподбор и Диагностика Авто Автомобили из Японии и Европы</h1> */}
+        <Image
+          src="/images/logoBig.png"
+          alt="Автоподобор"
+          width="300"
+          height="100"
+        />
+        <ul className="list">
           <li>
             <a href="#features">Услуги</a>
           </li>

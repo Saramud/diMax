@@ -3,8 +3,8 @@ import React from 'react'
 import './globals.css'
 
 export const metadata = {
-  title: 'My Landing Page',
-  description: 'Welcome to my landing page',
+  title: 'Автоподбор',
+  description: 'Автоподобор и диагностика авто, автомобили из Японии и Европы',
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
