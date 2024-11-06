@@ -1,11 +1,5 @@
 import Image from 'next/image'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {
-  faYoutube,
-  faInstagram,
-  faVk,
-  faWhatsapp,
-} from '@fortawesome/free-brands-svg-icons'
+import SocialIcons from './SocialIcons'
 
 export default function Footer() {
   return (
@@ -16,36 +10,7 @@ export default function Footer() {
         width="300"
         height="100"
       />
-      <div className="social-icons">
-        <a
-          href="https://wa.me/79215607819"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faWhatsapp} color="#00d757" />
-        </a>
-        <a
-          href="https://vk.com/dimaxcar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faVk} color="#0077ff" />
-        </a>
-        <a
-          href="https://www.youtube.com/@diMAXcar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faYoutube} color="#ff0033" />
-        </a>
-        <a
-          href="https://www.instagram.com/dimaxcar"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faInstagram} color="#833AB4" />
-        </a>
-      </div>
+      <SocialIcons />
       <p>
         &copy; {new Date().getFullYear()} diMaxcar автоподбор. Все права
         защищены.

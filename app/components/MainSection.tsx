@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import {INSTAGRAM, WHATSHAPP} from '../services/constants'
 
 type Service = {
   url: string
@@ -24,7 +25,7 @@ const serviceMap: Services = {
 export default function MainSection() {
   const servicesRender = ({url, alt}: Service) => {
     return (
-      <a href="https://wa.me/79215607819" target="_blank">
+      <a href={WHATSHAPP} target="_blank">
         <Image src={url} alt={alt} width="300" height="300" />
       </a>
     )
@@ -107,7 +108,7 @@ export default function MainSection() {
               <p className="text-justify">
                 С июля 2018 года я веду
                 <a
-                  href="https://www.instagram.com/dimaxcar"
+                  href={INSTAGRAM}
                   target="_blank"
                   className="about-container__href"
                 >
