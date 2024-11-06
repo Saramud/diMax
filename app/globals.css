@@ -1,3 +1,17 @@
+/* @font-face {
+  font-family: 'GeistVF';
+  src: url('../fonts/GeistVF.woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'Prata-Regular';
+  src: url('../fonts/Prata-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+} */
+
 :root {
   --header-color: #ffd413;
   --black-color: black;
@@ -10,7 +24,7 @@ html {
 
 body {
   display: flex;
-  font-family: Arial, sans-serif;
+  font-family: 'Prata-Regular', Arial, sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -61,6 +75,11 @@ nav ul li {
   margin: 0 1rem;
 }
 
+.text-justify {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .list {
   flex-direction: column;
 
@@ -105,8 +124,8 @@ section {
 }
 
 .features img:hover {
-  scale: 1.1;
-  transition: all 0.2s;
+  scale: 1.05;
+  transition: all 0.4s;
 }
 
 .social-icons a {
@@ -127,10 +146,20 @@ section {
   }
 }
 
+/* header */
+
+.header-title {
+  text-transform: uppercase;
+  max-width: 500px;
+  line-height: 1.3;
+  color: black;
+}
+
 /* about */
 
 .about-wrapper {
   display: flex;
+  flex-direction: column;
 }
 
 .about-container {
@@ -143,6 +172,10 @@ section {
   margin-bottom: 20px;
 }
 
+.about-container__main-info,
+.about-container__section {
+  border-bottom: 1px solid gray;
+}
 .about-container__title {
   color: #333;
 }
@@ -165,6 +198,12 @@ section {
   color: #555;
 }
 
-.about-container__image {
+.about-image-container {
   align-self: center;
+  border: 10px solid var(--header-color);
+  border-radius: 50%;
+}
+
+.about-image {
+  border-radius: 50%;
 }

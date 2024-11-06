@@ -4,7 +4,9 @@ export default function Header() {
   return (
     <header>
       <nav>
-        {/* <h1>Автоподбор и Диагностика Авто Автомобили из Японии и Европы</h1> */}
+        <h1 className="header-title">
+          Автоподбор и Диагностика Авто Автомобили из Японии и Европы
+        </h1>
         <Image
           src="/images/logoBig.png"
           alt="Автоподобор"
