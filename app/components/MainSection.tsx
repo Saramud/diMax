@@ -39,7 +39,7 @@ export default function MainSection() {
           {Object.values(serviceMap).map(servicesRender)}
         </div>
       </section>
-      <section id="about">
+      <section id="about" className="about">
         <h2 className="main-title">О себе</h2>
         <div className="about-wrapper">
           <div className="about-image-container">

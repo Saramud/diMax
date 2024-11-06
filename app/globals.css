@@ -156,6 +156,10 @@ section {
 
 /* about */
 
+.about {
+  background-color: aliceblue;
+}
+
 .about-wrapper {
   display: flex;
   flex-direction: column;
